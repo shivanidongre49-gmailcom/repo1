@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.LambdaFunctionHandlerDetails::handleRequest
+      CodeUri: E:\multipart-fileupload-java-lambda-master\scanning\HelloWorldFunction\.aws-sam\build\Function
+      Runtime: java11

@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.LambdaFunctionHandlerDetails::handleRequest
+      CodeUri: s3://mediastoreimages/4722ee4e6b890393bb241e18fc1b124d
+      Runtime: java11
